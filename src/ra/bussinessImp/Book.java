@@ -30,7 +30,7 @@ public class Book implements IBook, Comparable<Book> {
     @Override
     public void inputData() {
         // Input book ID:
-        this.bookId = (books.isEmpty()) ? 0 : books.size();
+        this.bookId = (books.isEmpty()) ? 0 : books.getLast().getBookId() + 1;
 
         // Input book name:
         System.out.print("Input book name: ");
